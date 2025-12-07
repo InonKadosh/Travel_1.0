@@ -1,0 +1,8 @@
+[build]
+builder = "nixpacks"
+buildCommand = "cd TravelServer && dotnet restore && dotnet publish -c Release -o out"
+
+[deploy]
+startCommand = "cd TravelServer/out && dotnet TravelServer.dll"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
