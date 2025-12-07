@@ -10,8 +10,8 @@ function requireEnv(name: string): string {
 }
 
 // Amadeus API Configuration
-const AMADEUS_API_KEY = requireEnv("AMADEUS_API_KEY");
-const AMADEUS_API_SECRET = requireEnv("AMADEUS_API_SECRET");
+const AMADEUS_API_KEY: string = requireEnv("AMADEUS_API_KEY");
+const AMADEUS_API_SECRET: string = requireEnv("AMADEUS_API_SECRET");
 
 // Airline names dictionary (common carriers)
 const AIRLINE_NAMES: Record<string, string> = {
