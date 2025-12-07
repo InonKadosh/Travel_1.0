@@ -70,8 +70,8 @@ async function getAmadeusToken() {
       },
       body: new URLSearchParams({
         grant_type: "client_credentials",
-        client_id: AMADEUS_API_KEY,
-        client_secret: AMADEUS_API_SECRET,
+        client_id: AMADEUS_API_KEY as string,
+        client_secret: AMADEUS_API_SECRET as string,
       }),
     });
 
